@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScaryWalkWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3028b3e06dfb88e234e3a5cabd388efd824a3c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57a686a57f674815ca64be1331a9a44201e0680e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScaryWalkWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScaryWalkWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
