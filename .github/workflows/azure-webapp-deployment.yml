@@ -3,7 +3,7 @@ name: Deploy to Azure Web App
 on:
   push:
     branches:
-      - main  # Triggers deployment when changes are pushed to the main branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up .NET
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: '6.0'  # Update if you’re using a different .NET version
+        dotnet-version: '8.0'  # Ensure .NET 8.0 is specified here
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -24,6 +24,6 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: ScaryWalkEventApp  # Replace with your Azure App Service name
+        app-name: ScaryWalkEventApp  # Replace with your App Service name
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: .
